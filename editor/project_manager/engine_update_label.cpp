@@ -2,10 +2,11 @@
 /*  engine_update_label.cpp                                               */
 /**************************************************************************/
 /*                         This file is part of:                          */
-/*                             GODOT ENGINE                               */
-/*                        https://godotengine.org                         */
+/*                             LINUS ENGINE                               */
+/*            https://linusbf15.github.io/linus-engine-web                */
 /**************************************************************************/
-/* Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md). */
+/* Copyright (c) 2026-present Linus Fogsgaard.                            */
+/* Copyright (c) 2014-2026 Godot Engine contributors (see AUTHORS.md).    */
 /* Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.                  */
 /*                                                                        */
 /* Permission is hereby granted, free of charge, to any person obtaining  */

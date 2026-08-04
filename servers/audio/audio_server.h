@@ -3,9 +3,11 @@
 /**************************************************************************/
 /*                         This file is part of:                          */
 /*                             LINUS ENGINE                               */
-/*             https://linusbf15.github.io/Linus-Engine                   */
+/*            https://linusbf15.github.io/linus-engine-web                */
 /**************************************************************************/
-/* Copyright (c) 2026-present Linus Engine contributors (see AUTHORS.md). */
+/* Copyright (c) 2026-present Linus Fogsgaard.                            */
+/* Copyright (c) 2014-2026 Godot Engine contributors (see AUTHORS.md).    */
+/* Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.                  */
 /*                                                                        */
 /* Permission is hereby granted, free of charge, to any person obtaining  */
 /* a copy of this software and associated documentation files (the        */

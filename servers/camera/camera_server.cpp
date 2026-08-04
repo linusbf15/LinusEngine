@@ -2,10 +2,10 @@
 /*  camera_server.cpp                                                     */
 /**************************************************************************/
 /*                         This file is part of:                          */
-/*                             Linus ENGINE                               */
-/*                 https://linusbf15.github.io/Linus-Engine               */
+/*                             LINUS ENGINE                               */
+/*            https://linusbf15.github.io/linus-engine-web                */
 /**************************************************************************/
-/* Copyright (c) 2026-present Linus Engine contributors (see AUTHORS.md). */
+/* Copyright (c) 2026-present Linus Fogsgaard.                            */
 /* Copyright (c) 2014-2026 Godot Engine contributors (see AUTHORS.md).    */
 /* Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.                  */
 /*                                                                        */
