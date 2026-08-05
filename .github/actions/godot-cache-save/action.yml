@@ -1,5 +1,5 @@
-name: Save Godot build cache
-description: Save Godot build cache.
+name: Save Linus Engine build cache
+description: Save Linus Engine build cache.
 inputs:
   cache-name:
     description: The cache base name (job name by default).

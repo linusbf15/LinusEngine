@@ -22,13 +22,13 @@ jobs:
           - name: Editor (target=editor)
             cache-name: macos-editor
             target: editor
-            bin: ./bin/godot.macos.editor.universal
+            bin: ./bin/Linus-Engine-macos-editor.universal
 
           - name: Template (target=template_release)
             cache-name: macos-template
             target: template_release
             scons-flags: debug_symbols=no
-            bin: ./bin/godot.macos.template_release.universal
+            bin: ./bin/Linus-Engine-macos-template.universal
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Restore Godot build cache
+      - name: Restore Linus Engine build cache
         uses: ./.github/actions/godot-cache-restore
         with:
           cache-name: ${{ matrix.cache-name }}
@@ -92,7 +92,7 @@ jobs:
           platform: macos
           target: ${{ matrix.target }}
 
-      - name: Save Godot build cache
+      - name: Save Linus Engine build cache
         uses: ./.github/actions/godot-cache-save
         with:
           cache-name: ${{ matrix.cache-name }}
@@ -100,11 +100,11 @@ jobs:
 
       - name: Prepare artifact
         run: |
-          lipo -create ./bin/godot.macos.${{ matrix.target }}.x86_64 ./bin/godot.macos.${{ matrix.target }}.arm64 -output ./bin/godot.macos.${{ matrix.target }}.universal
-          rm ./bin/godot.macos.${{ matrix.target }}.x86_64 ./bin/godot.macos.${{ matrix.target }}.arm64
+          lipo -create ./bin/Linus-Engine-macos.${{ matrix.target }}.x86_64 ./bin/Linus-Engine-macos.${{ matrix.target }}.arm64 -output ./bin/Linus-Engine-macos.${{ matrix.target }}.universal
+          rm ./bin/Linus-Engine-macos.${{ matrix.target }}.x86_64 ./bin/Linus-Engine-macos.${{ matrix.target }}.arm64
           rm -rf ./bin/build_deps
-          strip bin/godot.*
-          chmod +x bin/godot.*
+          strip bin/Linus-Engine.*
+          chmod +x bin/Linus-Engine.*
 
       - name: Upload artifact
         uses: ./.github/actions/upload-artifact

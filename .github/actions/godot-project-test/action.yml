@@ -1,9 +1,9 @@
-name: Test Godot project
-description: Run the test Godot project.
+name: Test Linus Engine project
+description: Run the test Linus Engine project.
 
 inputs:
   bin:
-    description: The path to the Godot executable
+    description: The path to the Linus Engine executable
     required: true
 
 runs:

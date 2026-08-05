@@ -1,5 +1,5 @@
-name: Upload Godot artifact
-description: Upload the Godot artifact.
+name: Upload Linus Engine artifact
+description: Upload the Linus Engine artifact.
 
 inputs:
   name:
@@ -13,7 +13,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Upload Godot Artifact
+    - name: Upload Linus Engine Artifact
       uses: actions/upload-artifact@v7
       with:
         name: ${{ inputs.name }}

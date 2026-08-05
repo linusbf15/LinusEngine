@@ -35,7 +35,7 @@ jobs:
             cache-name: linux-editor-mono
             target: editor
             scons-flags: module_mono_enabled=yes compiledb=yes
-            bin: ./bin/godot.linuxbsd.editor.x86_64.mono
+            bin: ./bin/Linus-Engine-linuxbsd-editor.x86_64.mono
             build-mono: true
             doc-test: true
             proj-conv: true
@@ -58,7 +58,7 @@ jobs:
               use_asan=yes
               use_ubsan=yes
               linker=mold
-            bin: ./bin/godot.linuxbsd.editor.dev.double.x86_64.san
+            bin: ./bin/Linus-Engine-linuxbsd-editor-dev-double.x86_64.san
             proj-test: true
             free-space: true
 
@@ -71,7 +71,7 @@ jobs:
               use_ubsan=yes
               use_llvm=yes
               linker=lld
-            bin: ./bin/godot.linuxbsd.editor.dev.x86_64.llvm.san
+            bin: ./bin/Linus-Engine-linuxbsd-editor-dev.x86_64.llvm.san
             # Test our oldest supported SCons/Python versions on one arbitrary editor build.
             legacy-scons: true
             free-space: true
@@ -84,21 +84,21 @@ jobs:
               use_tsan=yes
               use_llvm=yes
               linker=lld
-            bin: ./bin/godot.linuxbsd.editor.dev.x86_64.llvm.san
+            bin: ./bin/Linus-Engine-linuxbsd-editor-dev.x86_64.llvm.san
             free-space: true
 
           - name: Template w/ Mono, release (target=template_release)
             cache-name: linux-template-mono
             target: template_release
             scons-flags: module_mono_enabled=yes
-            bin: ./bin/godot.linuxbsd.template_release.x86_64.mono
+            bin: ./bin/Linus-Engine-linuxbsd-template_release.x86_64.mono
             artifact: true
 
           - name: Template w/ Mono, debug (target=template_debug)
             cache-name: linux-template-mono-debug
             target: template_debug
             scons-flags: module_mono_enabled=yes
-            bin: ./bin/godot.linuxbsd.template_debug.x86_64.mono
+            bin: ./bin/Linus-Engine-linuxbsd-template_debug.x86_64.mono
             artifact: true
 
           - name: Minimal template (target=template_release, everything disabled)
@@ -114,7 +114,7 @@ jobs:
               deprecated=no
               minizip=no
               brotli=no
-            bin: ./bin/godot.linuxbsd.template_release.x86_64
+            bin: ./bin/Linus-Engine-linuxbsd-template_release.x86_64
             artifact: true
 
     steps:
@@ -138,7 +138,7 @@ jobs:
           sudo rm -rf /usr/local/lib/android
           echo "Disk usage after:" && df -h
 
-      - name: Restore Godot build cache
+      - name: Restore Linus Engine build cache
         uses: ./.github/actions/godot-cache-restore
         with:
           cache-name: ${{ matrix.cache-name }}
@@ -268,7 +268,7 @@ jobs:
           reftags: "4.5-stable,4.4-stable"
 
       # Download and run the test project
-      - name: Test Godot project
+      - name: Test Linus ENgine project
         uses: ./.github/actions/godot-project-test
         if: matrix.proj-test
         with:

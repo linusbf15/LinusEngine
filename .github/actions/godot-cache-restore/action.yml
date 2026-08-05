@@ -1,5 +1,5 @@
-name: Restore Godot build cache
-description: Restore Godot build cache.
+name: Restore Linus Engine build cache
+description: Restore Linus Engine build cache.
 inputs:
   cache-name:
     description: The cache base name (job name by default).

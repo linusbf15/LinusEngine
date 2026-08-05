@@ -1,9 +1,9 @@
-name: Export Godot project
-description: Export a test Godot project.
+name: Export Linus Engine project
+description: Export a test Linus Engine project.
 
 inputs:
   bin:
-    description: The path to the Godot executable
+    description: The path to the Linus Engine executable
     required: true
 
 runs:
