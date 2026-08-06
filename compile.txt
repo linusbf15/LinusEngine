@@ -1,14 +1,12 @@
 cd /c/Users/User/Documents/GitHub/godot
 
 Production:
-scons platform=windows dev_build=no d3d12=yes angle=yes production=yes accesskit=yes winrt=yes target=editor lto=full
+scons platform=windows dev_build=no d3d12=yes angle=yes production=yes accesskit=yes winrt=yes target=editor lto=full module_mono_enabled=yes -j8
 Fast Debug:
-scons platform=windows dev_build=no d3d12=no angle=no accesskit=no winrt=no target=editor lto=none -j8
+scons platform=windows dev_build=no d3d12=no angle=no accesskit=no winrt=no target=editor lto=none module_mono_enabled=yes -j8
 Debug:
-scons platform=windows dev_build=no d3d12=yes angle=yes production=yes accesskit=yes winrt=yes target=editor lto=none -j8
+scons platform=windows dev_build=no d3d12=yes angle=yes production=yes accesskit=yes winrt=yes target=editor lto=none module_mono_enabled=yes -j8
 Full Debug:
-scons platform=windows dev_build=yes d3d12=yes angle=yes production=no accesskit=yes winrt=yes target=editor lto=none
-.NET:
-module_mono_enabled=yes
+scons platform=windows dev_build=yes d3d12=yes angle=yes production=no accesskit=yes winrt=yes target=editor lto=none module_mono_enabled=yes -j8
 To build an export template used for running exported games:
-scons target=template_release
+scons platform=windows target=template_release module_mono_enabled=yes -j8
