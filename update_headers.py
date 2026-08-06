@@ -47,7 +47,7 @@ def generate_copyright_header(filename: str, newline: str) -> str:
 /**************************************************************************/
 /*                         This file is part of:                          */
 /*                             LINUS ENGINE                               */
-/*            https://linusbf15.github.io/linus-engine-web                */
+/*            https://linusbf15.github.io/Linus-Engine                    */
 /**************************************************************************/
 /* Copyright (c) 2026-present Linus Fogsgaard.                            */
 /* Copyright (c) 2014-2026 Godot Engine contributors (see AUTHORS.md).    */

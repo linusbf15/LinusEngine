@@ -91,7 +91,7 @@ static const char *token_names[] = {
 	"^=", // CARET_EQUAL,
 	// Control flow
 	"if", // IF,
-	"elseif", // ELIF,
+	"elif", // ELIF,
 	"else", // ELSE,
 	"for", // FOR,
 	"while", // WHILE,
@@ -111,7 +111,7 @@ static const char *token_names[] = {
 	"const", // TK_CONST,
 	"enum", // ENUM,
 	"extends", // EXTENDS,
-	"function", // FUNC,
+	"func", // FUNC,
 	"in", // TK_IN,
 	"is", // IS,
 	"namespace", // NAMESPACE
